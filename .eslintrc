@@ -1,0 +1,43 @@
+{
+    "extends": [
+        "airbnb",
+        "prettier",
+        "plugin:react/jsx-runtime",
+        "plugin:react/recommended"
+      ],
+      "env" : {
+        "jest": true
+      },  
+      "globals": {
+          "document": true,
+          "React": true
+      },  
+      "rules": {
+        "react/jsx-filename-extension": 
+        [1, 
+            { 
+                "extensions": [
+                ".js" 
+             ]
+            }
+        ],
+        "react/function-component-definition": 
+        [1, 
+            {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+        }
+        ]
+      },
+      "settings": {
+        "import/resolver": {
+          "node": {
+            "paths": ["src"],
+            "extensions": [
+              ".js",
+              ".jsx"
+            ]
+          }
+        }
+      }
+}
